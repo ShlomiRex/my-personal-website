@@ -1,0 +1,35 @@
+<!-- views/pages/register.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<% include ../partials/head %>
+</head>
+<body class="container">
+
+<header>
+    <% include ../partials/header %>
+</header>
+
+<main>
+
+    <form action="/register" method="POST">
+        <table>
+            <tr><td>First name: <input type="text" name="fname"><br></td></tr>
+            <tr><td>Last name: <input type="text" name="lname"><br></td></tr>
+            <tr><td>Username: <input type="text" name="username"></td></tr>
+            <tr><td>Email: <input type="email" name="email"></td></tr>
+            <tr><td>Password: <input type="password" name="password"></td></tr>
+            <tr><td><input type="submit" value="Submit"></td></tr>
+        </table>
+    </form> 
+
+
+</main>
+
+<footer>
+    <% include ../partials/footer %>
+</footer>
+
+</body>
+</html>
